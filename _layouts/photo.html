@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article class="entry entry-photo">
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="photo-image">
+  {% if page.title %}<p class="entry-title" style="font-size:18px;margin-top:20px;">{{ page.title }}</p>{% endif %}
+  <p class="entry-date">{{ page.date | date: "%Y年%-m月%-d日" }}</p>
+</article>
