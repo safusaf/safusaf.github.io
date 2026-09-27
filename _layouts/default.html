@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+  <nav class="site-nav">
+    <a href="{{ "/" | relative_url }}">日記</a>
+    <a href="{{ "/poems.html" | relative_url }}">詩</a>
+    <a href="{{ "/photos.html" | relative_url }}">写真</a>
+  </nav>
+</header>
+<main>
+{{ content }}
+</main>
+<footer class="site-footer">
+  <span>{{ site.title }}</span>
+</footer>
+</body>
+</html>
