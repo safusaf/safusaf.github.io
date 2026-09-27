@@ -1,0 +1,42 @@
+:root {
+  --paper: #e8e2d5;
+  --paper-raised: #f1ece0;
+  --ink: #2b2b27;
+  --ink-soft: #6e685f;
+  --indigo: #3e4c59;
+  --rule: #c9c0ac;
+  --serif: "Shippori Mincho", serif;
+  --sans: "Zen Kaku Gothic New", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+body { font-family: var(--serif); font-size: 17px; line-height: 1.9; letter-spacing: 0.02em; }
+a { color: var(--indigo); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+.site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
+.site-title { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
+.site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
+.site-nav a { color: var(--ink-soft); }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--indigo); }
+main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
+.entry-list { list-style: none; margin: 0; padding: 0; }
+.entry-list-item { border-bottom: 1px solid var(--rule); }
+.entry-list-item a { display: flex; gap: 20px; align-items: baseline; padding: 16px 4px; color: var(--ink); }
+.entry-list-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); flex-shrink: 0; min-width: 78px; letter-spacing: 0.02em; }
+.entry-list-title { font-size: 17px; }
+.entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
+.entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
+.entry-title { font-family: var(--serif); font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
+.entry-body { font-size: 17px; line-height: 2; }
+.entry-body p { margin: 0 0 1.4em; }
+.entry-poem .entry-title { margin-bottom: 40px; }
+.poem-body { white-space: pre-line; font-size: 18px; line-height: 2.3; }
+.entry-poem .entry-date { margin-top: 40px; }
+.entry-photo { text-align: center; }
+.photo-image { max-width: 100%; border: 1px solid var(--ink); padding: 10px; background: var(--paper-raised); }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+.photo-grid-item { display: block; color: var(--ink); }
+.photo-grid-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--ink); background: var(--paper-raised); }
+.photo-grid-date { display: block; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+.site-footer { max-width: 640px; margin: 0 auto; padding: 24px; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); border-top: 1px solid var(--rule); }
+@media (max-width: 480px) { .site-header, main, .site-footer { padding-left: 18px; padding-right: 18px; } .entry-title { font-size: 22px; } }
