@@ -15,7 +15,7 @@ body { font-family: var(--serif); font-size: 17px; line-height: 1.9; letter-spac
 a { color: var(--indigo); text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 .site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
-.site-title { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
+.site-title { font-family: var(--title);  font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
 .site-nav a { color: var(--ink-soft); }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--indigo); }
@@ -27,7 +27,7 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-title { font-size: 17px; }
 .entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
-.entry-title { font-family: var(--serif); font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
+.entry-title { font-family: var(--title);  font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
 .entry-body { font-size: 17px; line-height: 2; }
 .entry-body p { margin: 0 0 1.4em; }
 .entry-poem .entry-title { margin-bottom: 40px; }
