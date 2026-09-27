@@ -1,0 +1,44 @@
+title: "帳"
+description: "詩と日記と写真の記録"
+lang: ja
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  poems:
+    output: true
+    permalink: /poems/:slug/
+  photos:
+    output: true
+    permalink: /photos/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "poems"
+    values:
+      layout: "poem"
+  - scope:
+      path: ""
+      type: "photos"
+    values:
+      layout: "photo"
+
+permalink: /diary/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
