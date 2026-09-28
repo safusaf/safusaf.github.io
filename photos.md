@@ -21,7 +21,7 @@ title: 写真
           .then(function(res) { return res.json(); })
           .then(function(commits) {
             var date = (commits[0] && commits[0].commit.author.date) || null;
-            return { path: f.path, name: f.name, date: date };
+            return { path: "/" + f.path, name: f.name, date: date };
           });
       }));
     })
