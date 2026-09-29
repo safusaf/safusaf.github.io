@@ -30,6 +30,7 @@ title: 写真
       items.forEach(function(item) {
         var a = document.createElement("a");
         a.className = "photo-grid-item";
+        a.id = "photo-" + item.name.replace(/[^a-zA-Z0-9]/g, "-");
         a.href = item.path;
         var img = document.createElement("img");
         img.src = item.path;
