@@ -20,8 +20,11 @@
 <main>
 {{ content }}
 </main>
+{% if page.url != "/" %}
 <footer class="site-footer">
   <a href="{{ "/" | relative_url }}">←</a>
+</footer>
+{% endif %}
 </footer>
 </body>
 </html>
