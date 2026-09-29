@@ -52,8 +52,10 @@ title: 日記
         li.className = "entry-list-item entry-list-photo";
         li.setAttribute("data-date", iso);
 
+        var slug = "photo-" + item.name.replace(/[^a-zA-Z0-9]/g, "-");
         var a = document.createElement("a");
-        a.href = item.path;
+        a.href = "/photos/#" + slug;
+
 
         var dateSpan = document.createElement("span");
         dateSpan.className = "entry-list-date";
