@@ -42,3 +42,17 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .photo-grid-date { display: block; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
 .site-footer { max-width: 640px; margin: 0 auto; padding: 24px; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); border-top: 1px solid var(--rule); }
 @media (max-width: 480px) { .site-header, main, .site-footer { padding-left: 18px; padding-right: 18px; } .entry-title { font-size: 22px; } }
+.site-footer a { color: var(--ink-soft); }
+.site-footer a:hover, .site-footer a:focus-visible { color: var(--indigo); }
+
+.entry-list-photo a { align-items: center; }
+.entry-list-thumb {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.entry-post .entry-title {
+  font-weight: 500;
+}
