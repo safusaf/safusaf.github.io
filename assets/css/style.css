@@ -49,3 +49,4 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-photo a { align-items: center; }
 .entry-list-thumb { flex: 1 1 auto; width: 100%; height: 32px; display: block; object-fit: cover; object-position: center; }
 .entry-post .entry-title { font-weight: 500; }
+.entry-poem .entry-title { font-weight: 500; }
