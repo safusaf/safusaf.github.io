@@ -34,10 +34,10 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .poem-body { white-space: pre-line; font-size: 18px; line-height: 2.3; }
 .entry-poem .entry-date { margin-top: 40px; }
 .entry-photo { text-align: center; }
-.photo-image { max-width: 100%; border: 1px solid var(--ink); padding: 10px; background: var(--paper-raised); }
+.photo-image { max-width: 100%;  padding: 10px; background: var(--paper-raised); }
 .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
 .photo-grid-item { display: block; color: var(--ink); }
-.photo-grid-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--ink); background: var(--paper-raised); }
+.photo-grid-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--paper-raised); }
 .photo-grid-date { display: block; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
 .site-footer { max-width: 640px; margin: 0 auto; padding: 24px; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); border-top: 1px solid var(--rule); }
 @media (max-width: 480px) { .site-header, main, .site-footer { padding-left: 18px; padding-right: 18px; } .entry-title { font-size: 22px; } }
