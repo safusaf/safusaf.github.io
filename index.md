@@ -15,7 +15,7 @@ title: 日記
   <li class="entry-list-item" data-date="{{ poem.date | date: "%Y-%m-%d" }}">
     <a href="{{ poem.url | relative_url }}">
       <span class="entry-list-date">{{ poem.date | date: "%Y.%m.%d" }}</span>
-      <span class="entry-list-title">{{ poem.title }}<span class="entry-list-type">詩</span></span>
+      <span class="entry-list-title">{{ poem.title }}</span>
     </a>
   </li>
 {% endfor %}
@@ -49,7 +49,7 @@ title: 日記
         var iso = d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
 
         var li = document.createElement("li");
-        li.className = "entry-list-item";
+        li.className = "entry-list-item entry-list-photo";
         li.setAttribute("data-date", iso);
 
         var a = document.createElement("a");
@@ -59,17 +59,13 @@ title: 日記
         dateSpan.className = "entry-list-date";
         dateSpan.textContent = iso.replace(/-/g, ".");
 
-        var titleSpan = document.createElement("span");
-        titleSpan.className = "entry-list-title";
-        titleSpan.textContent = item.name;
-
-        var typeSpan = document.createElement("span");
-        typeSpan.className = "entry-list-type";
-        typeSpan.textContent = "写真";
-        titleSpan.appendChild(typeSpan);
+        var img = document.createElement("img");
+        img.className = "entry-list-thumb";
+        img.src = item.path;
+        img.alt = "";
 
         a.appendChild(dateSpan);
-        a.appendChild(titleSpan);
+        a.appendChild(img);
         li.appendChild(a);
         list.appendChild(li);
       });
