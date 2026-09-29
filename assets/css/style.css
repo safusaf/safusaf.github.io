@@ -46,5 +46,5 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .site-footer a:hover, .site-footer a:focus-visible { color: var(--indigo); }
 
 .entry-list-photo a { align-items: center; }
-.entry-list-thumb { height: 48px; width: auto; display: block; object-fit: cover; }
+.entry-list-thumb { flex: 1 1 auto; width: 100%; height: 32px; display: block; object-fit: cover; object-position: center; }
 .entry-post .entry-title { font-weight: 500; }
