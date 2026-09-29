@@ -29,9 +29,9 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
 .entry-title { font-family: var(--title);  font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
-.entry-body { font-size: 17px; line-height: 1; }
+.entry-body { font-size: 17px; line-height: 2; }
 .entry-body p { margin: 0 0 1.4em; }
-.entry-body { font-size: 17px; line-height: 1; white-space: pre-line; }
+.entry-body { font-size: 17px; line-height: 2; white-space: pre-line; }
 .entry-poem .entry-title { margin-bottom: 40px; }
 .poem-body { white-space: pre-line; font-size: 18px; line-height: 2.3; }
 .entry-poem .entry-date { margin-top: 40px; }
