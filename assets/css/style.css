@@ -7,8 +7,9 @@
   --rule: #c9c0ac;
   --serif: "Shippori Mincho", serif;
   --sans: "Zen Kaku Gothic New", sans-serif;
-  --title: "Zen Maru Gothic", sans-serif; } * { box-sizing: border-box; }
-  --hand: "Zen Kurenaido", sans-serif;
+  --title: "Zen Maru Gothic", sans-serif;
+  --hand: "Zen Kurenaido", sans-serif; } * { box-sizing: border-box; }
+
 
 html, body {
   margin: 0;
