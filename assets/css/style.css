@@ -11,10 +11,8 @@
 
 
 
-html, body {  margin: 0;  padding: 0;  background-color: var(--paper);  color: var(--ink); }
-body {  font-family: var(--serif);  font-size: 17px;  line-height: 1.9; letter-spacing: 0.02em; }
-a {  color: var(--indigo);  text-decoration: none; }
-.bg-texture {  position: fixed;  top: 0;  left: 0;  right: 0;  bottom: 0;  z-index: -1;  background-color: var(--paper);  background-image: url("/assets/css/IMG_1594.jpeg");  background-repeat: repeat;  background-size: 260px 260px;  background-blend-mode: multiply; }
+html {  margin: 0;  padding: 0;  background-color: var(--paper);  background-image: url("/assets/css/IMG_1594.jpeg");  background-repeat: repeat;  background-size: 260px 260px;  background-blend-mode: multiply; color: var(--ink); }
+body {  margin: 0;  padding: 0;  background: transparent;  color: var(--ink);  font-family: var(--serif); font-size: 17px;  line-height: 1.9;  letter-spacing: 0.02em; }
 .site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
 .site-title { font-family: var(--title);  font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
