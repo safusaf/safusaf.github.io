@@ -8,6 +8,8 @@
   --serif: "Shippori Mincho", serif;
   --sans: "Zen Kaku Gothic New", sans-serif;
   --title: "Zen Maru Gothic", sans-serif; } * { box-sizing: border-box; }
+  --hand: "Zen Kurenaido", sans-serif;
+
 html, body { margin: 0; padding: 0; background-color: var(--paper); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-attachment: fixed; color: var(--ink); }
 body { font-family: var(--serif); font-size: 17px; line-height: 1.9; letter-spacing: 0.02em; }
 a { color: var(--indigo); text-decoration: none; }
