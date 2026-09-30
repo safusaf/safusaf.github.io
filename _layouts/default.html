@@ -26,5 +26,34 @@
 </footer>
 {% endif %}
 </footer>
+<body>
+<div class="page-scroll" id="page-scroll">
+<header class="site-header">
+  <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+  <nav class="site-nav">
+    <a href="{{ "/diary/" | relative_url }}">日記</a>
+    <a href="{{ "/poems/" | relative_url }}">詩</a>
+    <a href="{{ "/photos/" | relative_url }}">写真</a>
+  </nav>
+</header>
+<main>
+{{ content }}
+</main>
+{% if page.url != "/" %}
+<footer class="site-footer">
+  <a href="{{ "/" | relative_url }}">戻る</a>
+</footer>
+{% endif %}
+</div>
+<script>
+  if (location.hash) {
+    var target = document.querySelector(location.hash);
+    var scroller = document.getElementById("page-scroll");
+    if (target && scroller) {
+      var top = target.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop;
+      scroller.scrollTop = top;
+    }
+  }
+</script>
 </body>
 </html>
