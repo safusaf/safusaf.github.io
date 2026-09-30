@@ -20,7 +20,6 @@ html, body {
 .site-title { font-family: var(--title);  font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
 .site-nav a { color: var(--ink-soft); }
-.site-nav a:hover, .site-nav a:focus-visible { color: var(--indigo); }
 main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list { list-style: none; margin: 0; padding: 0; }
 .entry-list-item { border-bottom: 1px solid var(--rule); }
