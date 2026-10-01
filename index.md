@@ -59,5 +59,4 @@ getPhotoItems().then(function(items) {
     return b.getAttribute("data-date").localeCompare(a.getAttribute("data-date"));　 });
   rows.forEach(function(li) { list.appendChild(li); });　});
 </script>
-  });　rows.forEach(function(li) { list.appendChild(li); }); });　})();
-</script>
+
