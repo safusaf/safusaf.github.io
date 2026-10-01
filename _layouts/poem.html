@@ -3,6 +3,23 @@ layout: default
 ---
 <article class="entry entry-poem">
   <h1 class="entry-title">{{ page.title }}</h1>
-  <div class="entry-body poem-body">{{ content }}</div>
+  <div class="entry-body poem-body" id="poem-body">{{ content }}</div>
   <p class="entry-date">{{ page.date | date: "%Y年%-m月%-d日" }}</p>
 </article>
+<script>
+(function() {
+  var el = document.getElementById("poem-body");
+  if (!el) return;
+  var raw = el.textContent;
+  var stanzas = raw.split(/\n{2,}/);
+  el.innerHTML = stanzas.map(function(s) {
+    var lines = s.split("\n").map(function(line) {
+      return line
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    });
+    return "<p>" + lines.join("<br>") + "</p>";
+  }).join("");
+})();
+</script>
