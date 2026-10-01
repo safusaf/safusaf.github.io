@@ -87,6 +87,16 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
 .entry-title { font-family: var(--hand); font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
+.entry-list-thumb {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 32px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
 
 .entry-body { font-family: var(--hand); font-size: 17px; line-height: 2; white-space: pre-line; }
 .entry-body p { margin: 0 0 0.7em; }
