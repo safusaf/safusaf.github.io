@@ -147,3 +147,31 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
     height: auto;
   }
 }
+
+.site-header {
+  background-image: url("/assets/img/tear-top.png");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: auto 28px;
+}
+.site-footer {
+  background-image: url("/assets/img/tear-bottom.png");
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 28px;
+}
+
+body.is-diary main {
+  background-color: var(--paper);
+  background-image: url("/assets/img/paper-diary.jpg");
+  background-repeat: repeat;
+  background-size: 250px 150px;
+  background-blend-mode: multiply;
+}
+body.is-poem main {
+  background-color: var(--paper);
+  background-image: url("/assets/img/paper-poem.jpg");
+  background-repeat: repeat;
+  background-size: 250px 150px;
+  background-blend-mode: multiply;
+}
