@@ -123,3 +123,21 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-thumb { flex: 1 1 auto; width: 100%; height: 32px; display: block; object-fit: cover; object-position: center; }
 .entry-post .entry-title { font-weight: 500; }
 .entry-poem .entry-title { font-weight: 500; }
+
+@media (max-width: 480px) {
+  .photo-entry img {
+    display: block;
+    width: calc(100% + 36px);
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  .photo-entry img {
+    display: block;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
