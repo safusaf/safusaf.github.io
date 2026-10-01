@@ -68,7 +68,7 @@ body.is-photos .photo-grid-date {
   gap: 12px;
   border-bottom: 1px solid var(--rule);
 }
-.site-title { font-family: var(--karakaze); font-size:45px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
+.site-title { font-family: var(--karakaze); font-size: 40px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
 .site-nav a { color: var(--ink-soft); }
 
