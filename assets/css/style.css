@@ -50,7 +50,7 @@ a {
 }
 
 html, body {  height: 100%;  margin: 0;  padding: 0;  overflow: hidden;  background-color: var(--paper);  color: var(--ink); }
-.page-scroll {  height: 100%;  overflow-y: auto;  -webkit-overflow-scrolling: touch;  background-color: var(--paper);  background-image: url("/assets/css/IMG_1594.jpeg");  background-repeat: repeat;  background-size: 90px 90px;  background-blend-mode: multiply; }
+.page-scroll {  height: 100%;  overflow-y: auto;  -webkit-overflow-scrolling: touch;  background-color: var(--paper);  background-image: url("/assets/css/IMG_1594.jpeg");  background-repeat: repeat;  background-size: 200px 133px;  background-blend-mode: multiply; }
 body {  font-family: var(--serif); font-size: 17px;  line-height: 1.9;  letter-spacing: 0.02em; } a {  color: var(--indigo); text-decoration: none; }
 .site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
 .site-title { font-family: var(--hand); font-size: 22px; font-weight: 600; color: var(--ink); letter-spacing: 0.08em; }
