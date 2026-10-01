@@ -4,77 +4,51 @@ title: 写真
 ---
 <div class="photo-grid" id="photo-grid"></div>
 
+<script src="{{ "/assets/js/photos.js" | relative_url }}"></script>
 <script>
-(function() {
-  var owner = "safusaf";
-  var repo = "safusaf.github.io";
+getPhotoItems().then(function(items) {
   var grid = document.getElementById("photo-grid");
+  items.forEach(function(item) {
+    var slug = "photo-" + item.name.replace(/[^a-zA-Z0-9]/g, "-");
 
-  function parseMessage(msg) {
-    var parts = msg.split(/\n\n+/);
-    var title = (parts[0] || "").trim();
-    var note = (parts.slice(1).join("\n\n") || "").trim();
-    if (title === "Add files via upload") { title = ""; }
-    return { title: title, note: note };
-  }
+    var a = document.createElement("a");
+    a.className = "photo-entry";
+    a.id = slug;
+    a.href = "/view/?src=" + encodeURIComponent(item.path);
 
-  fetch("https://api.github.com/repos/" + owner + "/" + repo + "/contents/photos")
-    .then(function(res) { return res.json(); })
-    .then(function(files) {
-      var images = files.filter(function(f) {
-        return /\.(jpe?g|png|gif|webp)$/i.test(f.name);
-      });
-      return Promise.all(images.map(function(f) {
-        return fetch("https://api.github.com/repos/" + owner + "/" + repo + "/commits?path=photos/" + encodeURIComponent(f.name) + "&per_page=1")
-          .then(function(res) { return res.json(); })
-          .then(function(commits) {
-            var c = commits[0];
-            var date = (c && c.commit.author.date) || null;
-            var meta = parseMessage((c && c.commit.message) || "");
-            return { path: "/" + f.path, name: f.name, date: date, title: meta.title, note: meta.note };
-          });
-      }));
-    })
-    .then(function(items) {
-      items.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-      items.forEach(function(item) {
-        var slug = "photo-" + item.name.replace(/[^a-zA-Z0-9]/g, "-");
+    var img = document.createElement("img");
+    img.src = item.path;
+    img.alt = item.title || "";
+    a.appendChild(img);
 
-        var a = document.createElement("a");
-        a.className = "photo-entry";
-        a.id = slug;
-        a.href = "/view/?src=" + encodeURIComponent(item.path);
+    var cap = document.createElement("div");
+    cap.className = "photo-caption";
 
-        var img = document.createElement("img");
-        img.src = item.path;
-        img.alt = item.title || "";
-        a.appendChild(img);
+    if (item.title) {
+      var t = document.createElement("p");
+      t.className = "photo-title";
+      t.textContent = item.title;
+      cap.appendChild(t);
+    }
+    if (item.note) {
+      var n = document.createElement("p");
+      n.className = "photo-note";
+      n.textContent = item.note;
+      cap.appendChild(n);
+    }
+    if (item.date) {
+      var d = new Date(item.date);
+      var dEl = document.createElement("p");
+      dEl.className = "photo-date";
+      dEl.textContent = d.getFullYear() + "." + String(d.getMonth()+1).padStart(2,"0") + "." + String(d.getDate()).padStart(2,"0");
+      cap.appendChild(dEl);
+    }
 
-        var cap = document.createElement("div");
-        cap.className = "photo-caption";
-
-        if (item.title) {
-          var t = document.createElement("p");
-          t.className = "photo-title";
-          t.textContent = item.title;
-          cap.appendChild(t);
-        }
-        if (item.note) {
-          var n = document.createElement("p");
-          n.className = "photo-note";
-          n.textContent = item.note;
-          cap.appendChild(n);
-        }
-        if (item.date) {
-          var d = new Date(item.date);
-          var dEl = document.createElement("p");
-          dEl.className = "photo-date";
-          dEl.textContent = d.getFullYear() + "." + String(d.getMonth()+1).padStart(2,"0") + "." + String(d.getDate()).padStart(2,"0");
-          cap.appendChild(dEl);
-        }
-
-        a.appendChild(cap);
-        grid.appendChild(a);
+    a.appendChild(cap);
+    grid.appendChild(a);
+  });
+});
+</script>
       });
     });
 })();
