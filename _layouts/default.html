@@ -6,10 +6,10 @@
 <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&family=Zen+Maru+Gothic:wght@500;700&family=Klee+One:wght@400;600&display=swap">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=27">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=5">
 </head>
 <body>
-<div class="page-scroll" id="page-scroll">
+<div class="page-scroll{% if page.url == "/photos/" %} is-photos{% endif %}{% if page.url == "/view/" %} is-view{% endif %}" id="page-scroll">
 <header class="site-header">
   <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
   <nav class="site-nav">
