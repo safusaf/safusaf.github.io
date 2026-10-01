@@ -83,7 +83,8 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-body { font-family: var(--hand); font-size: 17px; line-height: 2; white-space: pre-line; }
 .entry-body p { margin: 0 0 0.7em; }
 .entry-poem .entry-title { margin-bottom: 40px; }
-.poem-body { font-family: var(--hand); white-space: pre-line; font-size: 18px; line-height: 2; }
+.poem-body {  font-family: var(--hand); font-size: 18px; line-height: 2;　}
+.poem-body p { margin: 0 0 1em;　}
 .entry-poem .entry-date { margin-top: 40px; }
 .entry-photo { text-align: center; }
 .photo-image { max-width: 100%; padding: 10px; background: var(--paper-raised); }
