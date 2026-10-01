@@ -12,6 +12,7 @@
 
 html, body {
   height: 100%;
+  height: 100dvh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -25,6 +26,7 @@ html, body {
 
 .page-scroll {
   height: 100%;
+  height: 100dvh;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: var(--paper);
