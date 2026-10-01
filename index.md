@@ -56,13 +56,8 @@ getPhotoItems().then(function(items) {
 
   var rows = Array.prototype.slice.call(list.children);
   rows.sort(function(a, b) {
-    return b.getAttribute("data-date").localeCompare(a.getAttribute("data-date"));
-  });
-  rows.forEach(function(li) { list.appendChild(li); });
-});
+    return b.getAttribute("data-date").localeCompare(a.getAttribute("data-date"));　 });
+  rows.forEach(function(li) { list.appendChild(li); });　});
 </script>
-      });
-      rows.forEach(function(li) { list.appendChild(li); });
-    });
-})();
+  });　rows.forEach(function(li) { list.appendChild(li); }); });　})();
 </script>
