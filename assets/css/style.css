@@ -81,7 +81,7 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
 .entry-title { font-family: var(--hand); font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
 .entry-body { font-family: var(--hand); font-size: 17px; line-height: 2; white-space: pre-line; }
-.entry-body p { margin: 0 0 0.7em; }
+.entry-body p { margin: 0 0 0.35em; }
 .entry-poem .entry-title { margin-bottom: 40px; }
 .poem-body {  font-family: var(--hand); font-size: 18px; line-height: 2;　}
 .poem-body p { margin: 0 0 1em;　}
