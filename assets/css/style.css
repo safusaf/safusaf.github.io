@@ -67,7 +67,7 @@ body.is-photos .photo-grid-date {
 }
 
 .site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
-.site-title { font-family: var(--karakaze); font-size: 26px; font-weight: 600; color: var(--ink); letter-spacing: 0.08em; }
+.site-title { font-family: var(--karakaze); font-size: 30px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
 .site-nav a { color: var(--ink-soft); }
 main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
