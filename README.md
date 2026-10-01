@@ -89,4 +89,10 @@ push するだけで GitHub 側が自動的にビルドしてくれる。
 CSSを編集したら、default.html 内の link rel 末尾の v=1 の数字を増やしてコミットしてください。
 一度Safariのタブを完全に閉じてから https://safusaf.github.io/ を開き直して確認してください。
 
+## ヘッダー・フッダーの破れ目の高さ調整
+
+assets/css下部より
+background-size: auto 28px;　←この値で調整
+ヘッダーとフッダー個別に設定してる
+
 
