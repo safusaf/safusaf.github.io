@@ -15,6 +15,7 @@ html, body {
   padding: 0;
   overflow: hidden;
   background-color: var(--paper);
+  background-image: url("/assets/css/IMG_1594.jpeg");
   color: var(--ink);
 }
 
