@@ -101,7 +101,7 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .photo-view { display: flex; justify-content: center; align-items: center; min-height: 60vh; }
 .photo-view img { max-width: 100%; max-height: 80vh; display: block; }
 
-.photo-grid { display: flex; flex-direction: column; gap: 96px; }
+.photo-grid { display: flex; flex-direction: column; gap: 120px; }
 .photo-entry { display: block; color: var(--ink); }
 .photo-entry img { display: block; width: 100%; height: auto; }
 .photo-caption { text-align: center; padding: 20px 12px 0; }
