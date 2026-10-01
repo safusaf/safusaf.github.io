@@ -82,7 +82,7 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-item { border-bottom: 1px solid var(--rule); }
 .entry-list-item a { display: flex; gap: 20px; align-items: baseline; padding: 16px 4px; color: var(--ink); }
 .entry-list-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); flex-shrink: 0; min-width: 78px; letter-spacing: 0.02em; }
-.entry-list-title { font-family: var(--hand); font-size: 17px; }
+.entry-list-title { font-family: var(--karakaze); font-size: 20px; }
 .entry-list-type { font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin-left: 10px; }
 .entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
