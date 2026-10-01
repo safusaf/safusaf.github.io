@@ -69,7 +69,6 @@ body.is-photos .photo-date {
   align-items: baseline;
   flex-wrap: nowrap;
   gap: 12px;
-  border-bottom: 1px solid var(--rule);
 }
 .site-title { font-family: var(--karakaze); font-size: 40px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
@@ -120,7 +119,7 @@ main .band-inner { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .photo-date { font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin: 0; letter-spacing: 0.05em; }
 
 .site-footer { width: 100%; font-family: var(--sans); font-size: 12px; color: var(--ink-soft); }
-.site-footer .band-inner { max-width: 640px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--rule); }
+.site-footer .band-inner { max-width: 640px; margin: 0 auto; padding: 24px;  }
 .site-footer a { color: var(--ink-soft); }
 .site-footer a:hover, .site-footer a:focus-visible { color: var(--indigo); }
 
