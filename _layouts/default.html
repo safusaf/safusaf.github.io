@@ -6,23 +6,29 @@
 <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&family=Zen+Maru+Gothic:wght@500;700&family=Klee+One:wght@400;600&display=swap">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=12">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=7">
 </head>
 <body class="{% if page.url == "/photos/" %}is-photos{% endif %}{% if page.url == "/view/" %}is-view{% endif %}">
 <header class="site-header">
-  <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-  <nav class="site-nav">
-    <a href="{{ "/diary/" | relative_url }}">日記</a>
-    <a href="{{ "/poems/" | relative_url }}">詩</a>
-    <a href="{{ "/photos/" | relative_url }}">写真</a>
-  </nav>
+  <div class="band-inner">
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "/diary/" | relative_url }}">日記</a>
+      <a href="{{ "/poems/" | relative_url }}">詩</a>
+      <a href="{{ "/photos/" | relative_url }}">写真</a>
+    </nav>
+  </div>
 </header>
 <main>
+<div class="band-inner">
 {{ content }}
+</div>
 </main>
 {% if page.url != "/" %}
 <footer class="site-footer">
-  <a href="{{ "/" | relative_url }}">戻る</a>
+  <div class="band-inner">
+    <a href="{{ "/" | relative_url }}">戻る</a>
+  </div>
 </footer>
 {% endif %}
 <script>
