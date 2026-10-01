@@ -5,7 +5,7 @@ title: 日記
 <ul class="entry-list" id="entry-list">
 {% for post in site.posts %}
   <li class="entry-list-item" data-date="{{ post.date | date: "%Y-%m-%d" }}">
-    a.href = "/view/?src=" + encodeURIComponent(item.path);
+      <a href="{{ post.url | relative_url }}">
       <span class="entry-list-date">{{ post.date | date: "%Y.%m.%d" }}</span>
       <span class="entry-list-title">{{ post.title }}</span>
     </a>
