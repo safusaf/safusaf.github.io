@@ -6,10 +6,9 @@
 <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&family=Zen+Maru+Gothic:wght@500;700&family=Klee+One:wght@400;600&display=swap">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=5">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v=6">
 </head>
-<body>
-<div class="page-scroll{% if page.url == "/photos/" %} is-photos{% endif %}{% if page.url == "/view/" %} is-view{% endif %}" id="page-scroll">
+<body class="{% if page.url == "/photos/" %}is-photos{% endif %}{% if page.url == "/view/" %}is-view{% endif %}">
 <header class="site-header">
   <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
   <nav class="site-nav">
@@ -26,14 +25,11 @@
   <a href="{{ "/" | relative_url }}">戻る</a>
 </footer>
 {% endif %}
-</div>
 <script>
   if (location.hash) {
     var target = document.querySelector(location.hash);
-    var scroller = document.getElementById("page-scroll");
-    if (target && scroller) {
-      var top = target.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop;
-      scroller.scrollTop = top;
+    if (target) {
+      window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY);
     }
   }
 </script>
