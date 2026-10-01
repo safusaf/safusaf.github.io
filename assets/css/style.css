@@ -67,7 +67,7 @@ body.is-photos .photo-grid-date {
 }
 
 .site-header { max-width: 640px; margin: 0 auto; padding: 48px 24px 20px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--rule); }
-.site-title { font-family: var(--karakaze); font-size: 30px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
+.site-title { font-family: var(--karakaze); font-size: 35px; font-weight: 400; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav { font-family: var(--sans); font-size: 14px; letter-spacing: 0.04em; display: flex; gap: 20px; }
 .site-nav a { color: var(--ink-soft); }
 main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
@@ -80,10 +80,10 @@ main { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
 .entry-list-item a:hover .entry-list-title, .entry-list-item a:focus-visible .entry-list-title { color: var(--indigo); }
 .entry-date { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 8px; }
 .entry-title { font-family: var(--hand); font-size: 26px; font-weight: 700; line-height: 1.5; margin: 0 0 28px; }
-.entry-body { font-family: var(--hand); font-size: 17px; line-height: 2; white-space: pre-line; }
+.entry-body { font-family: var(--hand); font-size: 17px; line-height: 1.5; white-space: pre-line; }
 .entry-body p { margin: 0 0 0.7em; }
 .entry-poem .entry-title { margin-bottom: 40px; }
-.poem-body { font-family: var(--hand); white-space: pre-line; font-size: 18px; line-height: 2; }
+.poem-body { font-family: var(--hand); white-space: pre-line; font-size: 18px; line-height: 1.7; }
 .entry-poem .entry-date { margin-top: 40px; }
 .entry-photo { text-align: center; }
 .photo-image { max-width: 100%; padding: 10px; background: var(--paper-raised); }
