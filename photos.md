@@ -31,7 +31,7 @@ title: 写真
         var a = document.createElement("a");
         a.className = "photo-grid-item";
         a.id = "photo-" + item.name.replace(/[^a-zA-Z0-9]/g, "-");
-        a.href = item.path;
+        a.href = "/view/?src=" + encodeURIComponent(item.path);
         var img = document.createElement("img");
         img.src = item.path;
         img.alt = item.name;
