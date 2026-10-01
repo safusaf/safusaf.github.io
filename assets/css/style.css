@@ -56,7 +56,6 @@ body.is-photos .photo-grid-date {
   color: var(--paper);
 }
 
-.site-header { width: 100%; }
 .site-header .band-inner {
   max-width: 640px;
   margin: 0 auto;
@@ -64,7 +63,7 @@ body.is-photos .photo-grid-date {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
   border-bottom: 1px solid var(--rule);
 }
